@@ -1,4 +1,8 @@
-export default function Marcetplace(){
+import axios from "axios";
+
+
+export default function Products(){
+
 
     return(
         <div>

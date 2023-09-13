@@ -2,15 +2,16 @@ import React from 'react';
 import { DownOutlined } from '@ant-design/icons';
 import { Dropdown, message, Space } from 'antd';
 import { useNavigate } from 'react-router-dom';
-import Marcetplace from '../Marcetplace';
+
 
 export default  function Shop() {
   const navigate = useNavigate();
 
   const onClick = ({ key }) => {
-    message.info(`Click on item ${key}`);
+    //message.info(`Click on item ${key}`);
+
     if (key === '2') {
-      navigate('/marcetplace');
+      navigate('/products');
     }
   };
 
