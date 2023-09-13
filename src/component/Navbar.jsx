@@ -2,6 +2,7 @@ import React from "react";
 
 import "./Navbar.css";
 import { Input, Space,  Col, Row,Typography} from "antd";
+import NavbarMenu from "./NavbarMenu";
 const { Search } = Input;
 const onSearch = (value, _e, info) => console.log(info?.source, value);
 export default function Navbar() {
@@ -44,7 +45,9 @@ export default function Navbar() {
            login or user
        </div>
       </div>
-     
+     <div className="headerMenu">
+        <NavbarMenu/>
+     </div>
       
     </div>
   );
