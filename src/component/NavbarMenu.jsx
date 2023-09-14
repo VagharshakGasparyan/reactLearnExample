@@ -1,13 +1,12 @@
 import {useSelector} from "react-redux";
 import {Link, NavLink, Outlet} from "react-router-dom";
-
-import Shop from "./Shop";
 import {AppstoreOutlined, MailOutlined, SettingOutlined, HomeOutlined} from '@ant-design/icons';
 import {Menu} from 'antd';
 import {useNavigate} from 'react-router-dom';
 
 
 export default function NavbarMenu() {
+
     const navigate = useNavigate();
     //     let userData=useSelector((state)=>{
     //         return state.someReducer1.user;
@@ -74,3 +73,4 @@ export default function NavbarMenu() {
         <Menu onClick={onClick} mode="horizontal" items={items}/>
     );
 }
+
