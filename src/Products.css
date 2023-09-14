@@ -1,1 +1,32 @@
+.vertical {
+  padding: 10px 30px;
+  width: 100%;
+  height: auto;
+
+}
+.slider_style {
+  min-width: 400px !important;
+  max-width: 600px !important;
+  height: 800px;
+  border-radius: 10px;
+  background-color: white !important;
+  padding: 30px 20px;
+
+}
+.slider_block{
+
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.content_style {
+  background-color: black !important;
+}
+.Buying_Format > div {
+  display: flex;
+  flex-direction: column;
+}
+
+
 
