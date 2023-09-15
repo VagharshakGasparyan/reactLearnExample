@@ -21,6 +21,7 @@ export default function App() {
           <Route path="contacts" element={<Contacts />} />
           <Route path="/help-center" element={<HelpCentr />} />
           <Route path="/shop" element={<Shop />} />
+          {/* <Route path="/product_item/:id" element={<MarcetplaceItem />} /> */}
         </Route>
       </Routes>
     </BrowserRouter>
