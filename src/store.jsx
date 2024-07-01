@@ -1,4 +1,4 @@
-import { configureStore, createSlice, combineReducers } from '@reduxjs/toolkit';
+import {configureStore, createSlice, combineReducers} from '@reduxjs/toolkit';
 import {
     persistStore,
     persistReducer,
@@ -9,32 +9,37 @@ import storage from 'redux-persist/lib/storage';
 export const reducer1 = createSlice({
     name: 'd_st',
     initialState: {
-         
+
         user: null
     },
     reducers: {
-        
-         deleteUserData:(state,action)=>{
-         state.user=null;
-         },
-        setUserData:(state,action)=>{
-         state.user=action.payload;
-                
+
+        deleteUserData: (state, action) => {
+            state.user = null;
         },
-       
+        setUserData: (state, action) => {
+            state.user = action.payload;
+
+        },
+
     },
+
 });
 const reducer2 = createSlice({
     name: 'd',
     initialState: {
         page1val: '',
-        
+        brand_time: 0,
+        reset_btn: '',
         defaultVal: 'default value'
     },
     reducers: {
-        
-        someAction3: (state, action) => {
-            state.page3val = action.payload;
+
+        changeBrandTime: (state, action) => {
+            state.brand_time = action.payload;
+        },
+        reset: (state, action) => {
+            state.reset_btn = action.payload;
         },
     },
 });

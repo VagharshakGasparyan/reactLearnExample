@@ -1,19 +1,21 @@
 .vertical {
-  padding: 10px 30px;
-  width: 100%;
-  height: auto;
+    padding: 10px 30px;
+    width: 100%;
+    height: auto;
 
 }
+
 .slider_style {
-  min-width: 400px !important;
-  max-width: 600px !important;
-  height: 800px;
-  border-radius: 10px;
-  background-color: white !important;
-  padding: 30px 20px;
+    min-width: 400px !important;
+    max-width: 400px !important;
+    height: auto;
+    border-radius: 10px;
+    background-color: white !important;
+    padding: 30px 20px;
 
 }
-.slider_block{
+
+.slider_block {
 
     display: flex;
     flex-direction: column;
@@ -21,11 +23,39 @@
 }
 
 .content_style {
-  background-color:white !important;
+    background-color: white !important;
 }
+
 .Buying_Format > div {
-  display: flex;
-  flex-direction: column;
+    display: flex;
+    flex-direction: column;
+}
+
+.sign_input {
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+
+}
+
+.login_Check {
+    display: flex;
+    flex-direction: row;
+
+}
+
+.logout {
+    width: 300px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    margin: 50px 450px;
+    gap: 15px;
+    padding-top: 50px;
 }
 
 

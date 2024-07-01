@@ -1,0 +1,267 @@
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+  }
+  /* componet product_items */
+  .main {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 15px;
+    padding: 10px ;
+
+  }
+  .main > a {
+    text-decoration: none;
+  }
+  .item {
+    width: 250px;
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .img > span {
+    position: relative;
+    left: 200px;
+    top: 40px;
+    color: white;
+  }
+  .img > span:hover {
+    color: red;
+  }
+  
+  .img > img {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+  }
+  .item_items {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 0px 20px;
+    color: black;
+  }
+  
+  /* Стили для элементов пагинации */
+  .paginate {
+    display: flex;
+    justify-content: center;
+  }
+  .paginate > ul {
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    padding: 25px ;
+  }
+  .pagination-item {
+    display: inline-block;
+    display: flex;
+    flex-direction: row;
+    margin: 0 5px;
+  }
+  
+  .pagination-item a {
+    text-decoration: none;
+    padding: 5px 10px;
+    background-color: rgba(229, 227, 227, 0.93);
+    color: black;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .pagination-item a:hover {
+    background-color: goldenrod;
+  }
+  
+  .pagination-item.active a {
+    background-color: goldenrod;
+  }
+  
+  .pagination-item.disabled a {
+    pointer-events: none;
+    background-color: #ccc;
+    color: #555;
+  }
+  
+  /* Стили для кнопки "Предыдущая" и "Следующая" */
+  .pagination-previous,
+  .pagination-next {
+    display: inline-block;
+    margin: 0 5px;
+  }
+  
+  .pagination-previous a,
+  .pagination-next a {
+    text-decoration: none;
+    padding: 5px 10px;
+    background-color:goldenrod;
+    color: black;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .pagination-previous a:hover,
+  .pagination-next a:hover {
+    background-color: #b4afaf;
+  }
+  
+  .pagination-previous.disabled a,
+  .pagination-next.disabled a {
+    pointer-events: none;
+    background-color: #ccc;
+    color: #555;
+  }
+  
+  /* component about
+  .about {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 30px;
+    padding: 50px 0px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    justify-content: center;
+    align-items: center;
+  }
+  .about > p {
+    padding: 0px 100px;
+    text-align: justify;
+    color: rgba(169, 169, 169, 0.932);
+  } */
+  
+
+
+  /* component login.jsx*/
+/*   
+  .login {
+    padding: 100px 0px;
+  }
+  /* Основной контейнер формы */
+  .sign_input {
+    max-width: 300px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Стили для текстовых полей и меток */
+  /* label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  
+  input[type="email"],
+  input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+  }
+  
+  /* Стили для кнопки */
+  
+  button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff; /* Цвет кнопки */
+    color: #fff; /* Цвет текста кнопки */
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #0056b3; /* Измененный цвет при наведении */
+  }  
+  
+  /* component product_item */
+  .item_name {
+    width: 100%;
+    height: 100px;
+    background-color: burlywood;
+    padding: 30px 100px;
+    color: white;
+  }
+  .marcet_item {
+    width: 85%;
+    height: 500px;
+    background-color: antiquewhite;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    right: 100px;
+  }
+  
+  .img_smoll {
+    width: 150px;
+    height: 150px;
+    border-radius: 8x;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin: 100px 100px;
+  }
+  .img_smoll > img {
+    width: 100%;
+    border: 1px solid goldenrod;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+  .img_big {
+    width: 600px;
+    height: 500px;
+    padding: 50px;
+  }
+  
+  .img_big > img {
+    width: 100%;
+    object-fit: cover;
+  
+    border: 1px solid goldenrod;
+  }
+  /* component upload */
+  
+  /* .upload {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding: 100px 100px;
+  
+  }
+  .section{
+  
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+  }
+  
+  .subject{
+    display: flex;
+    flex-direction: column;
+  }
+  .upload>button{
+  
+    width: 320px;
+  } */
+.lick_Btn{
+
+}

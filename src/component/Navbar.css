@@ -64,3 +64,14 @@
 .headerMenu{
     padding: 5px 25px;
 }
+.user_text{
+    display: flex;
+    flex-direction: column;
+}
+.headerMain_sign{
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    align-items: center;
+    cursor: pointer;
+}
